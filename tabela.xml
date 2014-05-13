@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<maquinadeestados estadoinicial="h,l,c,r" estadofinal=" " tamprefixo='1'>
+    <estado nome="h,l,c,r">
+    <prefixo>s</prefixo>
+    <proximoestado></proximoestado>
+    <prefixo>l</prefixo>
+    <proximoestado></proximoestado>
+    <prefixo>c</prefixo>
+    <proximoestado>l,r</proximoestado>
+    <prefixo>r</prefixo>
+    <proximoestado></proximoestado>
+  </estado>
+    <estado nome="l,r">
+    <prefixo>s</prefixo>
+     <proximoestado>h,l,r</proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado>h,l,c,r</proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado></proximoestado>
+  </estado>
+    <estado nome="h,l,r">
+    <prefixo>s</prefixo>
+     <proximoestado>l,r</proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado>r</proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado>l</proximoestado>
+  </estado>
+    <estado nome="l">
+    <prefixo>s</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado>h,l,c</proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado>h,l,r</proximoestado>
+  </estado>
+    <estado nome="r">
+    <prefixo>s</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado>h,l,r</proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado>h,c,r</proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado></proximoestado>
+  </estado>
+    <estado nome="h,l,c">
+    <prefixo>s</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado>c</proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado>l</proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado></proximoestado>
+  </estado>
+    <estado nome="h,c,r">
+    <prefixo>s</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado>r</proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado>c</proximoestado>
+  </estado>
+    <estado nome="c">
+    <prefixo>s</prefixo>
+     <proximoestado>h,c</proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado>h,l,c</proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado>h,c,r</proximoestado>
+  </estado>
+    <estado nome="h,c">
+    <prefixo>s</prefixo>
+     <proximoestado>c</proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado> </proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado></proximoestado>
+  </estado>
+    <estado nome=" ">
+    <prefixo>s</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>l</prefixo>
+     <proximoestado></proximoestado>
+    <prefixo>c</prefixo>
+     <proximoestado>h,c</proximoestado>
+    <prefixo>r</prefixo>
+     <proximoestado></proximoestado>
+  </estado>
+ 
+</maquinadeestados>

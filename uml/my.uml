@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_8pBkQMXSEeOS9vhDR_5CrQ" name="NewModel">
+  <packageImport xmi:id="_Use8QMXeEeOS9vhDR_5CrQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_WOmzIMXaEeOS9vhDR_5CrQ" name="maquinadeestados">
+    <ownedComment xmi:id="_9dcloMXkEeOS9vhDR_5CrQ" annotatedElement="_WOmzIMXaEeOS9vhDR_5CrQ _0M2vkMXaEeOS9vhDR_5CrQ">
+      <body>Para o correto funcionamento da classe 'Estado' dentro do método 'computarCadeia', 'prefixo' e 'proxEstado' devem ter o mesmo tamanho.</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0M2vkMXaEeOS9vhDR_5CrQ" name="Estado">
+      <ownedAttribute xmi:id="_0M2vkcXaEeOS9vhDR_5CrQ" name="nome" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0M2vksXaEeOS9vhDR_5CrQ" name="preFixos" visibility="private" type="_fpN18MXmEeOS9vhDR_5CrQ" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0M2vk8XaEeOS9vhDR_5CrQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0M2vlMXaEeOS9vhDR_5CrQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0M2vlcXaEeOS9vhDR_5CrQ" name="">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0M2vlsXaEeOS9vhDR_5CrQ" name="proxEstados" visibility="private" type="_fpN18MXmEeOS9vhDR_5CrQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0M2vl8XaEeOS9vhDR_5CrQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0M2vmMXaEeOS9vhDR_5CrQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_0M2vmcXaEeOS9vhDR_5CrQ" name="posPrefixo">
+        <ownedParameter xmi:id="_0M2vmsXaEeOS9vhDR_5CrQ" name="nomePrefixo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_0M2vm8XaEeOS9vhDR_5CrQ" name="posPrefixo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_0M2vnMXaEeOS9vhDR_5CrQ" name="getProxEstado">
+        <ownedParameter xmi:id="_0M2vncXaEeOS9vhDR_5CrQ" name="posProxEstado">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_0M2vnsXaEeOS9vhDR_5CrQ" name="nomeProxEstado" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_traUcMXdEeOS9vhDR_5CrQ" name="Estado"/>
+      <ownedOperation xmi:id="_8RoBcMgCEeOIPYz2vo7pXQ" name="setNome">
+        <ownedParameter xmi:id="__MOKUMgCEeOIPYz2vo7pXQ" name="NOME">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_K0BT4MgDEeOIPYz2vo7pXQ" name="getNome">
+        <ownedParameter xmi:id="_MWEVcMgDEeOIPYz2vo7pXQ" name="nome" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bTQGcMgDEeOIPYz2vo7pXQ" name="addPrefixo">
+        <ownedParameter xmi:id="_c4QVYMgDEeOIPYz2vo7pXQ" name="nomePrefixo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q4_FMMgDEeOIPYz2vo7pXQ" name="setProxEstado">
+        <ownedParameter xmi:id="_tPkiEMgDEeOIPYz2vo7pXQ" name="proxEstado">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kdSC4MXbEeOS9vhDR_5CrQ" name="MaquinaDeEstados">
+      <ownedAttribute xmi:id="_qUcqkMXbEeOS9vhDR_5CrQ" name="estadoFinal" visibility="private" type="_0M2vkMXaEeOS9vhDR_5CrQ"/>
+      <ownedAttribute xmi:id="_-C1gwMXbEeOS9vhDR_5CrQ" name="estadoInicial" visibility="private" type="_0M2vkMXaEeOS9vhDR_5CrQ"/>
+      <ownedAttribute xmi:id="_CoQMsMXcEeOS9vhDR_5CrQ" name="estados" visibility="private" type="_9VKW4MXlEeOS9vhDR_5CrQ">
+        <nameExpression xmi:id="_ryjf8MXeEeOS9vhDR_5CrQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_B8x64MXpEeOS9vhDR_5CrQ" name="tamPrefixo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Int"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_0WfEUMXoEeOS9vhDR_5CrQ" name="computarCadeia activity" specification="_M12pIMXcEeOS9vhDR_5CrQ" node="_USpNAMXrEeOS9vhDR_5CrQ _OiiaIMXsEeOS9vhDR_5CrQ _ffSPIMXsEeOS9vhDR_5CrQ _ihAeQMXtEeOS9vhDR_5CrQ _eKe4AMXvEeOS9vhDR_5CrQ _pq1VwMXvEeOS9vhDR_5CrQ _smXdUMXwEeOS9vhDR_5CrQ _qY8uEMXxEeOS9vhDR_5CrQ _FROQsMX1EeOS9vhDR_5CrQ _H3d9YMX5EeOS9vhDR_5CrQ _sNNYoMX_EeOS9vhDR_5CrQ _BiNnUMYAEeOS9vhDR_5CrQ _WQXRYMYAEeOS9vhDR_5CrQ _iaN_IMYAEeOS9vhDR_5CrQ _U0F_wMgFEeOIPYz2vo7pXQ">
+        <ownedComment xmi:id="_f_EjEMgIEeOIPYz2vo7pXQ" annotatedElement="_qY8uEMXxEeOS9vhDR_5CrQ">
+          <body>Caso não exista próximo estado, a função vai retornar &quot;&quot;</body>
+        </ownedComment>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Qmf18MXsEeOS9vhDR_5CrQ" name="Condição de existência da cadeia_To_OpaqueAction_1" source="_USpNAMXrEeOS9vhDR_5CrQ" target="_OiiaIMXsEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_SmewsMXsEeOS9vhDR_5CrQ" name="Condição de existência da cadeia_To_OpaqueAction_1_guard">
+            <body>Não</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_QmhrIMXsEeOS9vhDR_5CrQ" name="Condição de existência da cadeia_To_OpaqueAction_1_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_kh_pIMXuEeOS9vhDR_5CrQ" name="Initial_1_To_Condição de existência da cadeia" source="_U0F_wMgFEeOIPYz2vo7pXQ" target="_USpNAMXrEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_nZQKIMXuEeOS9vhDR_5CrQ" name="Initial_1_To_Condição de existência da cadeia_guard">
+            <body>Passa a Cadeia</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_kiA3QMXuEeOS9vhDR_5CrQ" name="Initial_1_To_Condição de existência da cadeia_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZpxQcMXwEeOS9vhDR_5CrQ" name="Retira o prefixo_To_Compara com os prefixos do estado atual" source="_OiiaIMXsEeOS9vhDR_5CrQ" target="_pq1VwMXvEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_d_48IMXwEeOS9vhDR_5CrQ" name="Retira o prefixo_To_Compara com os prefixos do estado atual_guard">
+            <body>Passa o prefixo</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_ZpyekMXwEeOS9vhDR_5CrQ" name="Retira o prefixo_To_Compara com os prefixos do estado atual_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JOoeQMXxEeOS9vhDR_5CrQ" name="Decision_2_To_Retorna False" source="_smXdUMXwEeOS9vhDR_5CrQ" target="_eKe4AMXvEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_KnbdMMXxEeOS9vhDR_5CrQ" name="Decision_2_To_Retorna False_guard">
+            <body>Não</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JOpsYMXxEeOS9vhDR_5CrQ" name="Decision_2_To_Retorna False_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_iVJWEMX5EeOS9vhDR_5CrQ" name="Buscar o próximo estado._To_OpaqueAction_5" source="_FROQsMX1EeOS9vhDR_5CrQ" target="_H3d9YMX5EeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_ovZcsMX5EeOS9vhDR_5CrQ" name="Buscar o próximo estado._To_OpaqueAction_5_guard">
+            <body>Passa o objeto Estado achado</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_iVLLQMX5EeOS9vhDR_5CrQ" name="Buscar o próximo estado._To_OpaqueAction_5_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_hskEYMX_EeOS9vhDR_5CrQ" name="Atualizar o estado atual_To_Condição de existência da cadeia" source="_H3d9YMX5EeOS9vhDR_5CrQ" target="_USpNAMXrEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_mde1sMX_EeOS9vhDR_5CrQ" name="Atualizar o estado atual_To_Condição de existência da cadeia_guard">
+            <body>Volta para a condição do while</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_hslSgMX_EeOS9vhDR_5CrQ" name="Atualizar o estado atual_To_Condição de existência da cadeia_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_tsv4wMX_EeOS9vhDR_5CrQ" name="Condição de existência da cadeia_To_Decision_3" source="_USpNAMXrEeOS9vhDR_5CrQ" target="_sNNYoMX_EeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_0QboMMX_EeOS9vhDR_5CrQ" name="Condição de existência da cadeia_To_Decision_3_guard">
+            <body>Sim</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_tswf0MX_EeOS9vhDR_5CrQ" name="Condição de existência da cadeia_To_Decision_3_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_uu5SQMX_EeOS9vhDR_5CrQ" name="Decision_3_To_Retorna True" source="_sNNYoMX_EeOS9vhDR_5CrQ" target="_ihAeQMXtEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_1oGlwMX_EeOS9vhDR_5CrQ" name="Decision_3_To_Retorna True_guard">
+            <body>Sim</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_uu55UMX_EeOS9vhDR_5CrQ" name="Decision_3_To_Retorna True_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_vin1QMX_EeOS9vhDR_5CrQ" name="Decision_3_To_Retorna False" source="_sNNYoMX_EeOS9vhDR_5CrQ" target="_eKe4AMXvEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_yjV0QMX_EeOS9vhDR_5CrQ" name="Decision_3_To_Retorna False_guard">
+            <body>Não</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_viocUcX_EeOS9vhDR_5CrQ" name="Decision_3_To_Retorna False_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_9ArYcMgFEeOIPYz2vo7pXQ" name="Initial_1_To_Operações iniciais." source="_ffSPIMXsEeOS9vhDR_5CrQ" target="_U0F_wMgFEeOIPYz2vo7pXQ">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_9AsmkMgFEeOIPYz2vo7pXQ" name="Initial_1_To_Operações iniciais._guard" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_9AsmkcgFEeOIPYz2vo7pXQ" name="Initial_1_To_Operações iniciais._weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_GYS9MMgIEeOIPYz2vo7pXQ" name="Comparar com os prefixos do estado atual._To_Obter nome do próximo estado." source="_pq1VwMXvEeOS9vhDR_5CrQ" target="_qY8uEMXxEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_LQy9MMgIEeOIPYz2vo7pXQ" name="Comparar com os prefixos do estado atual._To_Obter nome do próximo estado._guard">
+            <body>Passa a posição do prefixo</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_GYULUMgIEeOIPYz2vo7pXQ" name="Comparar com os prefixos do estado atual._To_Obter nome do próximo estado._weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_vnbYAMgIEeOIPYz2vo7pXQ" name="Obter nome do próximo estado._To_Decision_2" source="_qY8uEMXxEeOS9vhDR_5CrQ" target="_smXdUMXwEeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_yf7PIMgIEeOIPYz2vo7pXQ" name="Obter nome do próximo estado._To_Decision_2_guard">
+            <body>Passa o nome do próximo estado</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_vnb_EMgIEeOIPYz2vo7pXQ" name="Obter nome do próximo estado._To_Decision_2_weight"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_IMbX0MgJEeOIPYz2vo7pXQ" name="Decision_2_To_Buscar o próximo estado." source="_smXdUMXwEeOS9vhDR_5CrQ" target="_FROQsMX1EeOS9vhDR_5CrQ">
+          <guard xmi:type="uml:OpaqueExpression" xmi:id="_NlKXEMgJEeOIPYz2vo7pXQ" name="Decision_2_To_Buscar o próximo estado._guard">
+            <body>Sim</body>
+          </guard>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_IMcl8MgJEeOIPYz2vo7pXQ" name="Decision_2_To_Buscar o próximo estado._weight"/>
+        </edge>
+        <node xmi:type="uml:DecisionNode" xmi:id="_USpNAMXrEeOS9vhDR_5CrQ" name="Condição de existência da cadeia" outgoing="_Qmf18MXsEeOS9vhDR_5CrQ _tsv4wMX_EeOS9vhDR_5CrQ" incoming="_kh_pIMXuEeOS9vhDR_5CrQ _hskEYMX_EeOS9vhDR_5CrQ">
+          <ownedComment xmi:id="_WlZ50MXrEeOS9vhDR_5CrQ" annotatedElement="_USpNAMXrEeOS9vhDR_5CrQ">
+            <body>A cadeia foi totalmente consumida?</body>
+          </ownedComment>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_OiiaIMXsEeOS9vhDR_5CrQ" name="Retirar o prefixo." outgoing="_ZpxQcMXwEeOS9vhDR_5CrQ" incoming="_Qmf18MXsEeOS9vhDR_5CrQ">
+          <body>// Retirar da cadeia o prefixo de tamanho n, sendo n o tamanho padrão dos prefixos informado por tamPrefixo</body>
+        </node>
+        <node xmi:type="uml:InitialNode" xmi:id="_ffSPIMXsEeOS9vhDR_5CrQ" name="Initial_1" outgoing="_9ArYcMgFEeOIPYz2vo7pXQ"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ihAeQMXtEeOS9vhDR_5CrQ" name="Retorna True" incoming="_uu5SQMX_EeOS9vhDR_5CrQ">
+          <ownedComment xmi:id="_3yINUMX_EeOS9vhDR_5CrQ" annotatedElement="_ihAeQMXtEeOS9vhDR_5CrQ">
+            <body>Retorna True</body>
+          </ownedComment>
+        </node>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_eKe4AMXvEeOS9vhDR_5CrQ" name="Retorna False" incoming="_JOoeQMXxEeOS9vhDR_5CrQ _vin1QMX_EeOS9vhDR_5CrQ">
+          <ownedComment xmi:id="_sqgrkMXyEeOS9vhDR_5CrQ" annotatedElement="_eKe4AMXvEeOS9vhDR_5CrQ">
+            <body>Retornar False</body>
+          </ownedComment>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_pq1VwMXvEeOS9vhDR_5CrQ" name="Comparar com os prefixos do estado atual." outgoing="_GYS9MMgIEeOIPYz2vo7pXQ" incoming="_ZpxQcMXwEeOS9vhDR_5CrQ">
+          <body>// Pega o prefixo retirado anteriormente e o compara com todos os prefixos do estado atual (estadoAtual)</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_smXdUMXwEeOS9vhDR_5CrQ" name="Decision_2" outgoing="_JOoeQMXxEeOS9vhDR_5CrQ _IMbX0MgJEeOIPYz2vo7pXQ" incoming="_vnbYAMgIEeOIPYz2vo7pXQ">
+          <ownedComment xmi:id="_zdWjQMXwEeOS9vhDR_5CrQ" annotatedElement="_smXdUMXwEeOS9vhDR_5CrQ">
+            <body>Existe um prefixo em estadoAtual que bte com o prefixo da cadeia?</body>
+          </ownedComment>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_qY8uEMXxEeOS9vhDR_5CrQ" name="Obter nome do próximo estado." outgoing="_vnbYAMgIEeOIPYz2vo7pXQ" incoming="_GYS9MMgIEeOIPYz2vo7pXQ">
+          <body>// Pega a String do próximo estado usando a posição do prefixo (estão na mesma posição em seus respectivos Arrays) retornado na última ação</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_FROQsMX1EeOS9vhDR_5CrQ" name="Buscar o próximo estado." outgoing="_iVJWEMX5EeOS9vhDR_5CrQ" incoming="_IMbX0MgJEeOIPYz2vo7pXQ">
+          <body>// Buscar no Array estados o estado com o mesmo nome da String recebida</body>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_H3d9YMX5EeOS9vhDR_5CrQ" name="Atualizar o estado atual" outgoing="_hskEYMX_EeOS9vhDR_5CrQ" incoming="_iVJWEMX5EeOS9vhDR_5CrQ">
+          <body>// Atualizar a variável estadoAtual para o novo estado recebido</body>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_sNNYoMX_EeOS9vhDR_5CrQ" name="Decision_3" outgoing="_uu5SQMX_EeOS9vhDR_5CrQ _vin1QMX_EeOS9vhDR_5CrQ" incoming="_tsv4wMX_EeOS9vhDR_5CrQ">
+          <ownedComment xmi:id="_fipQUMgJEeOIPYz2vo7pXQ" annotatedElement="_sNNYoMX_EeOS9vhDR_5CrQ">
+            <body>O estado atual é o mesmo que o estado final?</body>
+          </ownedComment>
+        </node>
+        <node xmi:type="uml:CallOperationAction" xmi:id="_BiNnUMYAEeOS9vhDR_5CrQ" name="getProxEstado_call" operation="_0M2vnMXaEeOS9vhDR_5CrQ"/>
+        <node xmi:type="uml:CallOperationAction" xmi:id="_WQXRYMYAEeOS9vhDR_5CrQ" name="posPrefixo_call" operation="_0M2vmcXaEeOS9vhDR_5CrQ"/>
+        <node xmi:type="uml:CallOperationAction" xmi:id="_iaN_IMYAEeOS9vhDR_5CrQ" name="getEstado_call" operation="_H4lI8MX_EeOS9vhDR_5CrQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_U0F_wMgFEeOIPYz2vo7pXQ" name="Operações iniciais." outgoing="_kh_pIMXuEeOS9vhDR_5CrQ" incoming="_9ArYcMgFEeOIPYz2vo7pXQ">
+          <body>// Receber a cadeia.</body>
+          <body>// Criar a varável estadoAtual que será usada para percorrer a máquina de estados.</body>
+        </node>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_M12pIMXcEeOS9vhDR_5CrQ" name="computarCadeia" method="_0WfEUMXoEeOS9vhDR_5CrQ">
+        <ownedParameter xmi:id="_iXTYYMXcEeOS9vhDR_5CrQ" name="cadeia">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ovfCcMXcEeOS9vhDR_5CrQ" name="aceitar" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_L9av0MXdEeOS9vhDR_5CrQ" name="MaquinaDeEstados">
+        <ownedParameter xmi:id="_SzwVgMXdEeOS9vhDR_5CrQ" name="xmlArq">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_H4lI8MX_EeOS9vhDR_5CrQ" name="getEstado">
+        <ownedParameter xmi:id="_KBHiwMX_EeOS9vhDR_5CrQ" name="nomeEstado">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OxMmkMX_EeOS9vhDR_5CrQ" name="estado" type="_0M2vkMXaEeOS9vhDR_5CrQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_9VKW4MXlEeOS9vhDR_5CrQ" name="ArrayList&lt;Estado>"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_fpN18MXmEeOS9vhDR_5CrQ" name="ArrayList&lt;String>"/>
+  </packagedElement>
+</uml:Model>
