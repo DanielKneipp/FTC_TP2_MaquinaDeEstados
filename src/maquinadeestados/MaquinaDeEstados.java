@@ -74,7 +74,9 @@ public class MaquinaDeEstados {
                         
                        novo.setProxEstado(eElement.getElementsByTagName("proximoestado").item(a).getTextContent());
                        // System.out.println("Proximo estado : " + eElement.getElementsByTagName("proximoestado").item(a).getTextContent());
-                        
+                      novo.setEmpilha(eElement.getElementsByTagName("empilha").item(a).getTextContent());
+                      //System.out.println("empilha: " + eElement.getElementsByTagName("empilha").item(a).getTextContent());
+                      novo.setDesempilha(eElement.getElementsByTagName("desempilha").item(a).getTextContent());
                        
                      }
 			
