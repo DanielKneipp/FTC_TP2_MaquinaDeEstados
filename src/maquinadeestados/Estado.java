@@ -15,6 +15,8 @@ public class Estado {
     private String nome;
     private ArrayList<String> preFixos;
     private ArrayList<String> proxEstados;
+    private String empilha;
+    private String desempilha;
     
    //Método construtor que inicializa arrays de prefixos e respectivos proximos estados.
     public Estado()
@@ -81,6 +83,30 @@ return _return;
        this.proxEstados.add(proxEstado);
     }
     
+    public void setEmpilha(String data)
+    {
+        
+        this.empilha = data;
+    }
     
+    public String getEmpilha()
+    {
+        
+        return this.empilha;
+        
+    }   
+    
+    public void setDesempilha(String data)
+    {
+        this.desempilha = data;
+        
+        
+    }
+    public String getDesempilha()
+    {
+        
+      return this.desempilha;
+        
+    }
     
 }
