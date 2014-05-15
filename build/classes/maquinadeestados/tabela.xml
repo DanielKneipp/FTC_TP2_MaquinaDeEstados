@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<maquinadeestados>
+    <estado nome="h,l,c,r">
+    <peso proximoestado ="">s</peso>
+    <peso proximoestado ="">l</peso>
+    <peso proximoestado ="l,r">c</peso>
+    <peso proximoestado ="">r</peso>
+  </estado>
+    <estado nome="l,r">
+    <peso proximoestado ="h,l,r">s</peso>
+    <peso proximoestado ="">l</peso>
+    <peso proximoestado ="h,l,c,r">c</peso>
+    <peso proximoestado ="">r</peso>
+  </estado>
+    <estado nome="h,l,r">
+    <peso proximoestado ="l,r">s</peso>
+    <peso proximoestado ="r">l</peso>
+    <peso proximoestado ="">c</peso>
+    <peso proximoestado ="l">r</peso>
+  </estado>
+    <estado nome="l">
+    <peso proximoestado ="">s</peso>
+    <peso proximoestado ="">l</peso>
+    <peso proximoestado ="h,l,c">c</peso>
+    <peso proximoestado ="h,l,r">r</peso>
+  </estado>
+    <estado nome="r">
+    <peso proximoestado ="">s</peso>
+    <peso proximoestado ="h,l,r">l</peso>
+    <peso proximoestado ="h,c,r">c</peso>
+    <peso proximoestado ="">r</peso>
+  </estado>
+    <estado nome="h,l,c">
+    <peso proximoestado ="">s</peso>
+    <peso proximoestado ="c">l</peso>
+    <peso proximoestado ="l">c</peso>
+    <peso proximoestado ="">r</peso>
+  </estado>
+    <estado nome="h,c,r">
+    <peso proximoestado ="">s</peso>
+    <peso proximoestado ="">l</peso>
+    <peso proximoestado ="r">c</peso>
+    <peso proximoestado ="c">r</peso>
+  </estado>
+    <estado nome="c">
+    <peso proximoestado ="h,c">s</peso>
+    <peso proximoestado ="h,l,c">l</peso>
+    <peso proximoestado ="">c</peso>
+    <peso proximoestado ="h,c,r">r</peso>
+  </estado>
+    <estado nome="h,c">
+    <peso proximoestado ="c">s</peso>
+    <peso proximoestado ="">l</peso>
+    <peso proximoestado ="">c</peso>
+    <peso proximoestado ="">r</peso>
+  </estado>
+    <estado nome="">
+    <peso proximoestado ="">s</peso>
+    <peso proximoestado ="">l</peso>
+    <peso proximoestado ="h,c">c</peso>
+    <peso proximoestado ="">r</peso>
+  </estado>
+</maquinadeestados>
