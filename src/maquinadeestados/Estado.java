@@ -15,28 +15,26 @@ public class Estado {
     private String nome;
     private ArrayList<String> preFixos;
     private ArrayList<String> proxEstados;
-    private String empilha;
-    private String desempilha;
+    private ArrayList<String> empilha;
+    private ArrayList<String> desempilha;
     
    //Método construtor que inicializa arrays de prefixos e respectivos proximos estados.
     public Estado()
     {
         preFixos = new ArrayList<String>();
         proxEstados = new ArrayList<String>();
+        empilha = new ArrayList<String>();
+        desempilha = new ArrayList<String>();
     }
     //Seta nome do estado
     public void setNome(String NOME)
     {
-        this.nome = NOME;
-        
-        
+        this.nome = NOME;        
     }
     //Retorna nome do estado
     public String getNome()
     {
-        
         return this.nome;
-        
     }
     //Adiciona prefixo ao array de prefixos do estado
     public void addPrefixo(String prefixo)
@@ -59,16 +57,11 @@ public class Estado {
                 if(preFixos.get(a).equals(nomePrefixo))
                 {
                     _return = a;
-                    
                 }
                     
             }
-            
         }
-        
-return _return;
-        
-        
+        return _return;       
     }
     
   
@@ -85,28 +78,22 @@ return _return;
     
     public void setEmpilha(String data)
     {
-        
-        this.empilha = data;
+        this.empilha.add(data);
     }
     
-    public String getEmpilha()
+    public String getEmpilha(int pos)
     {
-        
-        return this.empilha;
-        
+        return this.empilha.get(pos);
     }   
     
     public void setDesempilha(String data)
     {
-        this.desempilha = data;
-        
-        
+        this.desempilha.add(data);       
     }
-    public String getDesempilha()
+    
+    public String getDesempilha(int pos)
     {
-        
-      return this.desempilha;
-        
+      return this.desempilha.get(pos);
     }
     
 }
