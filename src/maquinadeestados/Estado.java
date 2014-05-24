@@ -42,26 +42,33 @@ public class Estado {
         this.preFixos.add(prefixo);
     }
     //Determina posição de prefixo dentro da matriz de prefixos caso o prefixo exista
-    public int posPrefixo(String nomePrefixo)
+    //levando em concideração o que será retirado da pilha seja compatível com o topo, 
+    //caso seja retirado.
+    public int posPrefixo(String nomePrefixo, String TopoPilha)
     {
-        int _return = 0;
+       int _return = -1;
+        boolean alguemqrdesempilhar = false;
         
-        if(!preFixos.contains(nomePrefixo))
+        for(int a = 0; a < preFixos.size(); a++)
         {
-            _return = -1;
-        }
-        else
-        {
-            for(int a = 0; a < preFixos.size(); a++)
+            if(preFixos.get(a).equals(nomePrefixo))
             {
-                if(preFixos.get(a).equals(nomePrefixo))
-                {
+            	if(desempilha.get(a).equals(TopoPilha))
+            	{
+                    alguemqrdesempilhar = true;
                     _return = a;
-                }
-                    
-            }
+            	}   
+            	else
+            	{
+            	    if(!desempilha.get(a).equals(""))
+            	    {
+            		if(!alguemqrdesempilhar)
+            		_return = a;
+            	    }   
+                }       
+            } 
         }
-        return _return;       
+        return _return;
     }
     
   

@@ -112,9 +112,16 @@ public class MaquinaDeEstados {
     	 
     	for (int i = 0; i < cadeia.length(); i = i + this.tamPrefixo) {             
             cadeia.getChars(i, i + this.tamPrefixo, prefixo, 0);
-    		 
-            posPrefixo = estadoAtual.posPrefixo(String.copyValueOf(prefixo));
-    		
+            if(!Pilha.empty()) 
+                posPrefixo = estadoAtual.posPrefixo(String.copyValueOf(prefixo), Pilha.peek());
+            else
+    		posPrefixo = estadoAtual.posPrefixo(String.copyValueOf(prefixo), "");
+            
+            if(posPrefixo == -1)
+            {
+            	return false;
+            }
+            
             nomeProxEstado = estadoAtual.getProxEstado(posPrefixo);
     	
             if (nomeProxEstado.equals(""))  // verifica se tem um próximo Estado
@@ -124,16 +131,7 @@ public class MaquinaDeEstados {
             }
             if(!estadoAtual.getDesempilha(posPrefixo).equals(""))  // verifica se quer desempilhar algo
             {
-                if(!Pilha.empty()) // verifica se a pilha esta vazia
-                {
-                    // verifica se o que eu qro desempilhar esta no topo da pilha
-                    if(Pilha.peek().equals(estadoAtual.getDesempilha(posPrefixo)))  
-                        Pilha.pop(); // desempilha       
-                    else
-                        return false;
-                }
-                else
-                    return false;
+                Pilha.pop(); // desempilha       
             }
             if(!estadoAtual.getEmpilha(posPrefixo).equals(""))   // verifica se eu qro empilhar algo
             {
