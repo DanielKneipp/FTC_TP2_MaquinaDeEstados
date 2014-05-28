@@ -5,43 +5,52 @@
     <proximoestado></proximoestado>
     <empilha></empilha>
     <desempilha></desempilha>
+    
     <prefixo>-</prefixo>
     <proximoestado></proximoestado>
-     <empilha></empilha>
+    <empilha></empilha>
     <desempilha></desempilha>
+    
     <prefixo>(</prefixo>
     <proximoestado>ap</proximoestado>
-     <empilha>X</empilha>
-    <desempilha> </desempilha>
+    <empilha>X</empilha>
+    <desempilha></desempilha>
+    
     <prefixo>)</prefixo>
     <proximoestado></proximoestado>
-     <empilha></empilha>
+    <empilha></empilha>
     <desempilha></desempilha>
-    <prefixo></prefixo>
+    
+    <prefixo>t</prefixo>
     <proximoestado>fp</proximoestado>
-     <empilha> </empilha>
-    <desempilha> </desempilha>
+    <empilha></empilha>
+    <desempilha></desempilha>
   </estado> 
-   <estado nome="fp">
+  
+  <estado nome="fp">
     <prefixo>+</prefixo>
     <proximoestado>ap</proximoestado>
-     <empilha> </empilha>
-    <desempilha> </desempilha>
+    <empilha></empilha>
+    <desempilha></desempilha>
+    
     <prefixo>-</prefixo>
     <proximoestado>ap</proximoestado>
-     <empilha> </empilha>
-    <desempilha> </desempilha>
+    <empilha></empilha>
+    <desempilha></desempilha>
+    
     <prefixo>(</prefixo>
     <proximoestado></proximoestado>
-     <empilha></empilha>
+    <empilha></empilha>
     <desempilha></desempilha>
+    
     <prefixo>)</prefixo>
     <proximoestado>fp</proximoestado>
-     <empilha>X</empilha>
-    <desempilha> </desempilha>
-    <prefixo></prefixo>
+    <empilha></empilha>
+    <desempilha>X</desempilha>
+    
+    <prefixo>t</prefixo>
     <proximoestado></proximoestado>
-     <empilha></empilha>
+    <empilha></empilha>
     <desempilha></desempilha>
   </estado> 
 </maquinadeestados>

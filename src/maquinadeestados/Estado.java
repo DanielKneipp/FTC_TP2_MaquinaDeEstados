@@ -60,10 +60,10 @@ public class Estado {
             	}   
             	else
             	{
-            	    if(!desempilha.get(a).equals(""))
+            	    if(desempilha.get(a).equals(""))
             	    {
             		if(!alguemqrdesempilhar)
-            		_return = a;
+                            _return = a;
             	    }   
                 }       
             } 
